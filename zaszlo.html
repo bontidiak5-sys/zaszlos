@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zászlós kvíz</title>
+    <link rel="stylesheet" href="zaszlo.css">
+</head>
+<body>
+    <main class="container">
+        <h1>Zászlós kvíz</h1>
+        <div id="status" class="status">
+            <div id="progress">Kérdés: <span id="current">0</span>/10</div>
+            <div id="score">Jó: <span id="correct">0</span> • Rossz: <span id="wrong">0</span></div>
+        </div>
+
+        <div id="quiz" class="quiz">
+            <div id="flagBox" class="flag-box">
+                <img id="flag" alt="zászló" src="" />
+            </div>
+            <div id="countryName" style="display:block;text-align:center;font-size:1.5em;font-weight:700;color:#0b66ff;margin:12px 0 18px 0;"></div>
+
+            <div id="options" class="options">
+                
+            </div>
+
+            <div class="controls">
+                <button id="nextBtn" disabled>Következő</button>
+                <button id="restartBtn" style="display:none">Újra</button>
+            </div>
+
+            <div id="message" class="message"></div>
+        </div>
+
+        <div id="loading" class="loading">Betöltés…</div>
+        <div id="error" class="error"></div>
+    </main>
+
+    <script src="zaszlo.js"></script>
+</body>
+</html>
